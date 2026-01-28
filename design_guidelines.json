@@ -1,0 +1,197 @@
+{
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Public Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700,
+      "black": 800
+    },
+    "sizes": {
+      "h1": "text-4xl font-bold tracking-tight",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "body": "text-sm leading-relaxed",
+      "small": "text-xs font-medium tracking-wide uppercase"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;700;800&family=Public+Sans:wght@300;400;500;600&display=swap');"
+    ]
+  },
+  "colors": {
+    "theme_strategy": "Soft Utility (Light) / Command Center (Dark)",
+    "light": {
+      "background": "0 0% 98%",
+      "foreground": "240 10% 3.9%",
+      "card": "0 0% 100%",
+      "card_foreground": "240 10% 3.9%",
+      "popover": "0 0% 100%",
+      "popover_foreground": "240 10% 3.9%",
+      "primary": "240 5.9% 10%",
+      "primary_foreground": "0 0% 98%",
+      "secondary": "240 4.8% 95.9%",
+      "secondary_foreground": "240 5.9% 10%",
+      "muted": "240 4.8% 95.9%",
+      "muted_foreground": "240 3.8% 46.1%",
+      "accent": "24 94% 53%",
+      "accent_foreground": "0 0% 98%",
+      "destructive": "0 84.2% 60.2%",
+      "destructive_foreground": "0 0% 98%",
+      "border": "240 5.9% 90%",
+      "input": "240 5.9% 90%",
+      "ring": "240 5.9% 10%"
+    },
+    "dark": {
+      "background": "240 10% 3.9%",
+      "foreground": "0 0% 98%",
+      "card": "240 10% 3.9%",
+      "card_foreground": "0 0% 98%",
+      "popover": "240 10% 3.9%",
+      "popover_foreground": "0 0% 98%",
+      "primary": "0 0% 98%",
+      "primary_foreground": "240 5.9% 10%",
+      "secondary": "240 3.7% 15.9%",
+      "secondary_foreground": "0 0% 98%",
+      "muted": "240 3.7% 15.9%",
+      "muted_foreground": "240 5% 64.9%",
+      "accent": "24 94% 53%",
+      "accent_foreground": "0 0% 98%",
+      "destructive": "0 62.8% 30.6%",
+      "destructive_foreground": "0 0% 98%",
+      "border": "240 3.7% 15.9%",
+      "input": "240 3.7% 15.9%",
+      "ring": "240 4.9% 83.9%"
+    },
+    "usage_rules": [
+      "Use 'accent' (Orange) ONLY for high-priority actions (Buy, Sell, Alert).",
+      "Use 'muted-foreground' for labels and secondary data.",
+      "Never use pure black (#000000). Use the tinted variables provided.",
+      "Borders in tables should be subtle (opacity 40%)."
+    ]
+  },
+  "visual_enhancers": {
+    "borders": {
+      "default": "border border-border",
+      "active": "border-l-4 border-l-accent",
+      "radius": "rounded-sm"
+    },
+    "shadows": {
+      "card": "shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]",
+      "hover": "shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-2px_rgba(0,0,0,0.1)]",
+      "inner": "shadow-inner"
+    },
+    "textures": {
+      "noise": "bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 rounded-sm font-medium transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 px-4 py-2 rounded-sm font-medium",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 rounded-sm",
+      "ghost": "hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 rounded-sm"
+    },
+    "cards": {
+      "wrapper": "rounded-sm border bg-card text-card-foreground shadow-sm",
+      "header": "flex flex-col space-y-1.5 p-6",
+      "content": "p-6 pt-0",
+      "footer": "flex items-center p-6 pt-0"
+    },
+    "inputs": {
+      "base": "flex h-9 w-full rounded-sm border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "tables": {
+      "wrapper": "w-full overflow-auto rounded-sm border",
+      "header": "h-10 px-2 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0",
+      "row": "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",
+      "cell": "p-2 align-middle [&:has([role=checkbox])]:pr-0 font-mono text-xs"
+    }
+  },
+  "grids": {
+    "dashboard_layout": "grid grid-cols-1 md:grid-cols-4 gap-4 p-4 md:p-8",
+    "bento_mode_b": {
+      "summary_card": "col-span-1 h-full",
+      "main_chart": "col-span-1 md:col-span-2 row-span-2 h-full",
+      "feed_list": "col-span-1 row-span-2 h-full overflow-hidden"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover_lift": "hover:-translate-y-0.5",
+    "active_press": "active:scale-95",
+    "page_enter": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility": {
+    "contrast": "Ensure 4.5:1 contrast ratio for normal text.",
+    "focus_states": "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+    "aria": "Use aria-label for icon-only buttons.",
+    "reduced_motion": "motion-reduce:transition-none motion-reduce:animate-none"
+  },
+  "media": {
+    "image_style": "object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500",
+    "avatar_style": "rounded-full border-2 border-background"
+  },
+  "image_urls": {
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1729952620303-4dc47fb5d93a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcHJvZHVjdCUyMHBhY2thZ2luZyUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Njk1Njk0NzR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Cosrx Cream - Generic Skincare Product",
+        "category": "product_placeholder"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1746422029252-de9841a2ef79?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwcHJvZHVjdCUyMHBhY2thZ2luZyUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Njk1Njk0NzR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Coffee Can - Generic Food Product",
+        "category": "product_placeholder"
+      }
+    ],
+    "avatars": [
+      {
+        "url": "https://images.pexels.com/photos/8547399/pexels-photo-8547399.jpeg",
+        "description": "Professional Headshot Male",
+        "category": "user_avatar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/31660598/pexels-photo-31660598.jpeg",
+        "description": "Professional Headshot Female",
+        "category": "user_avatar"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE TAILWIND CONFIG: Add the font families (Manrope, Public Sans, JetBrains Mono) to tailwind.config.js.",
+    "2. UPDATE CSS VARIABLES: Replace the contents of index.css :root and .dark with the values provided in the 'colors' section of this JSON.",
+    "3. COMPONENT OVERRIDES: When using Shadcn components, apply the 'rounded-sm' class instead of 'rounded-md' or 'rounded-lg' to match the 'Soft Utility' aesthetic.",
+    "4. LAYOUT: Use the 'Bento Mode B' grid strategy for the main dashboard page.",
+    "5. ICONS: Use 'lucide-react' for all UI icons. Use 'phosphor-icons' if a more specific weight is needed.",
+    "6. CHARTS: Use 'recharts' (via Shadcn Charts) for all data visualization. Style them with the 'primary' and 'accent' colors.",
+    "7. TESTING: Add 'data-testid' to all interactive elements (buttons, inputs, links).",
+    "8. THEME: Implement a theme toggle (Light/Dark) in the top navigation bar.",
+    "9. TABLES: Use dense tables with sticky headers for inventory and order lists.",
+    "10. NOISE: Add a subtle noise texture overlay to the background if possible (opacity 2-3%)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
